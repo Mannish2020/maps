@@ -1,0 +1,22 @@
+---
+title: "Introduction to R Maps"
+author: "Manish Gyawali"
+date: 2021-01-27
+categories: ["R"]
+tags: ["R Markdown", "plot", "regression","maps"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE, message = NA, warning = FALSE, echo = FALSE)
+```
+
+```{r}
+
+library(dplyr)
+library(ggplot2)
+
+```
+
+![Pakistan Map]("~/Documents/Documents/crosstalk.html")
+
