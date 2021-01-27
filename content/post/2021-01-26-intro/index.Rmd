@@ -22,7 +22,7 @@ library(magrittr)
 
 m = leaflet() %>% addTiles() 
 m %>% fitBounds(0,40,10,50) %>%
-  setView(-93.65, 42.0285, zoom = 17) %>% 
-  addPopups(-93.65, 42.0285, "Here is the <b>Department of Statistics</b>, ISU")
+  setView(27.646516510011892, 85.32331506375914, zoom = 17) %>% 
+  addPopups(27.646516510011892, 85.32331506375914, "Here is the <b>ICIMOD HQ</b>, Lalitpur")
   
 ```
