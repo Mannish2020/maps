@@ -21,12 +21,4 @@ library(magrittr)
 
 leaflet() %>% addTiles() %>% setView(0,0,1)
 
-
 ```
-
-```{r}
-htmlwidgets::saveWidget(l, file="firstl.html")
-```
-
-
-
