@@ -21,5 +21,8 @@ library(ggplot2)
 Intro to Maps
 
 
-![Pakistan Map]("~/Documents/Documents/crosstalk.html")
+```{r}
+head(mtcars)
+```
+
 
