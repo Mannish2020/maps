@@ -14,6 +14,19 @@ knitr::opts_chunk$set(
 Intro to Maps
 
 ![Pak Map](/pak_map.png)
+```{r}
+
+library(leaflet)
+library(magrittr)
+
+leaflet() %>% addTiles() %>% setView(0,0,1)
+
+
+```
+
+```{r}
+htmlwidgets::saveWidget(l, file="firstl.html")
+```
 
 
 
