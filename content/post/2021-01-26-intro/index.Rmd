@@ -11,18 +11,9 @@ knitr::opts_chunk$set(
   collapse = TRUE, message = NA, warning = FALSE, echo = FALSE)
 ```
 
-```{r}
-
-library(dplyr)
-library(ggplot2)
-
-```
-
 Intro to Maps
 
+![Pak Map](/pak_map.png)
 
-```{r}
-head(mtcars)
-```
 
 
