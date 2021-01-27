@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 
 Intro to Maps
 
-![Pak Map](/pak_map.png)
+
 ```{r}
 
 library(leaflet)
