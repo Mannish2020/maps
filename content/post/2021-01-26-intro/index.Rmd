@@ -20,6 +20,9 @@ Intro to Maps
 library(leaflet)
 library(magrittr)
 
-leaflet() %>% addTiles() %>% setView(0,0,1)
-
+m = leaflet() %>% addTiles() 
+m %>% fitBounds(0,40,10,50) %>%
+  setView(-93.65, 42.0285, zoom = 17) %>% 
+  addPopups(-93.65, 42.0285, "Here is the <b>Department of Statistics</b>, ISU")
+  
 ```
