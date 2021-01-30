@@ -36,7 +36,8 @@ m %>%
 ```{r}
 
 pak.data = readr::read_csv('~/Datasets/country_data/pakistan/pak_indicators.csv')
-pak.geo = sf::st_read('~/Datasets/country_data/pakistan/pakistan_districts')
+pak.geo = sf::st_read(
+  '~/Datasets/country_data/pakistan/pakistan_districts', quiet = TRUE)
 ```
 
 ```{r}
