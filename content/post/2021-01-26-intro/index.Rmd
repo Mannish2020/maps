@@ -8,7 +8,8 @@ tags: ["R Markdown", "plot", "regression","maps"]
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
-  collapse = TRUE, message = FALSE, warning = FALSE, echo = FALSE)
+  collapse = TRUE, message = FALSE, warning = FALSE, 
+  echo = FALSE, comment = NA)
 ```
 
 Intro to Maps in R
