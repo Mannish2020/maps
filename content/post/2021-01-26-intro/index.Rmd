@@ -90,11 +90,9 @@ ggplot(join_1[["geometry"]]) +
 pla = colorNumeric(palette = "plasma", domain = join_1$`Poverty Rate (%)`)
 
 labels = sprintf(
-  # "<strong>%s</strong><br/>%g people / mi<sup>2</sup>",
   "<strong>%s</strong><br/>%i",
   join_1$districts,join_1$`Poverty Rate (%)`
-  # states$name, states$density
-) %>% lapply(htmltools::HTML)
+) %>% purrr::map(htmltools::HTML)
 
 
 join_1 %>% 
@@ -114,10 +112,6 @@ join_1 %>%
       textsize = "15px",
       opacity = 0.6,
       direction = "auto"),
-    # popup = ~ paste(
-    #   "District:", districts, "<br>", "povrate:",`Poverty Rate (%)` 
-    #   ),
-    # popupOptions = popupOptions(maxWidth ="100%", closeOnClick = TRUE),
     highlight = highlightOptions(
     weight = 5,
     color = "#666",
