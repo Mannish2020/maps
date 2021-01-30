@@ -35,7 +35,7 @@ pak.geo = sf::st_read('~/Datasets/country_data/pakistan/pakistan_districts')
 ```
 
 ```{r}
-# Merging datasets
+# Merging the datasets
 library(dplyr)
 
 # Unique districts in pak.geo and pak.data
@@ -111,6 +111,7 @@ join_1 %>%
             values = ~`Poverty Rate (%)`, 
             title = "Poverty Rate: <br>Pakistan Districts",
             opacity = 1)
+
 
   
 ```
