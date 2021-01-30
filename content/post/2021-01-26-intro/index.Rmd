@@ -103,7 +103,7 @@ join_1 %>%
   addPolygons(
     weight = 1,
     fillColor = ~ pla(`Poverty Rate (%)`),
-    dashArray = "3", fillOpacity = 0.7,
+    dashArray = "3", fillOpacity = 0.3,
     opacity = 0.5,
     color = "black",
     label = labels,
@@ -138,6 +138,7 @@ join_1 %>%
     ),
     position = "topleft"
   ) %>% 
+
   
   # Add Legend
   addLegend("bottomright", pal = pla, 
