@@ -89,7 +89,7 @@ pla = colorNumeric(palette = "plasma", domain = join_1$`Poverty Rate (%)`)
 
 join_1 %>% 
   leaflet() %>%
-  setView(74.3587, 31.5204, zoom = 6) %>% 
+  setView(74.3587, 31.5204, zoom = 5) %>% 
   addPolygons(
     weight = 1,
     fillColor = ~ pla(`Poverty Rate (%)`),
