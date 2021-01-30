@@ -8,12 +8,16 @@ tags: ["R Markdown", "plot", "regression","maps"]
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
-  collapse = TRUE, message = NA, warning = FALSE, echo = FALSE)
+  collapse = TRUE, message = FALSE, warning = FALSE, echo = FALSE)
 ```
 
-Intro to Maps
+Intro to Maps in R
+
+This is a photo of a map: 
 
 ![Pak Map](/pak_map.png){width=80%}
+
+We see here ICIMOD's location! 
 
 ```{r}
 
