@@ -48,8 +48,8 @@ pak.geo = sf::st_read(
 pak.data_json = jsonlite::toJSON(pak.data)
 pak.geo_json = jsonlite::toJSON(pak.geo)
 
-write(pak.data_json,"../../../data/pak.data_json")
-write(pak.geo_json,"../../../data/pak.geo_json")
+write(pak.data_json,"../../../data/pakData.json")
+write(pak.geo_json,"../../../data/pakGeo.json")
 ```
 
 
@@ -58,8 +58,8 @@ write(pak.geo_json,"../../../data/pak.geo_json")
 # Read it in json format. Data in json format can be included in data
 ## files. 
 
-pak.data = jsonlite::fromJSON("../../../data/pak.data_json")
-pak.geo = jsonlite::fromJSON("../../../data/pak.geo_json")
+pak.data = jsonlite::fromJSON("../../../data/pakData.json")
+pak.geo = jsonlite::fromJSON("../../../data/pakGeo.json")
 
 ```
 
