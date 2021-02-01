@@ -36,7 +36,7 @@ m %>%
 ```{r}
 
 # As these files are already in the project, don't run this chunk
-# Run this now. 
+# Run this now also. 
 
 pak.data = readr::read_csv('~/Datasets/country_data/pakistan/pak_indicators.csv')
 pak.geo = sf::st_read(
@@ -53,15 +53,33 @@ write(pak.geo_json,"../../../data/pakGeo.json")
 ```
 
 
-```{r, include= TRUE}
+```{r, include= F}
 
 # Read it in json format. Data in json format can be included in data
 ## files. 
 
-pak.data = jsonlite::fromJSON("../../../data/pakData.json")
-pak.geo = jsonlite::fromJSON("../../../data/pakGeo.json")
+pakData = jsonlite::fromJSON("../../../data/pakData.json")
+pakGeo = jsonlite::fromJSON("../../../data/pakGeo.json")
 
 ```
+
+Table 
+
+```{r}
+
+# Display the json file as data frame
+
+json_file = lapply(pakData, function(x) {
+  x[sapply(x, is.null)] <- NA
+  unlist(x)
+})
+
+df = as.data.frame(do.call("cbind", json_file))
+
+head((names(df)))
+
+```
+
 
 
 ```{r}
