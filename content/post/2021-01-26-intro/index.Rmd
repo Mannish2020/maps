@@ -36,7 +36,7 @@ m %>%
 ```{r}
 
 # As these files are already in the project, don't run this chunk
-# Run it now
+# Run this now. 
 
 pak.data = readr::read_csv('~/Datasets/country_data/pakistan/pak_indicators.csv')
 pak.geo = sf::st_read(
