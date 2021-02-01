@@ -53,7 +53,7 @@ write(pak.geo_json,"../../../data/pakGeo.json")
 ```
 
 
-```{r, include= FALSE}
+```{r, include= TRUE}
 
 # Read it in json format. Data in json format can be included in data
 ## files. 
